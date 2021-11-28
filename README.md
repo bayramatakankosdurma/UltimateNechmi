@@ -17,7 +17,7 @@ bir savaşma kabiliyeti yoktur o yüzden düşmanlarla tek mücadele şansınız
 
 - Oyunumuzu [buradan](https://simmer.io/@connetables/ultimatenechmi) oynayabilirsiniz.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oyun Görselleri
+### Oyun Görselleri
 ![alt text](https://user-images.githubusercontent.com/56637126/143788712-d5c79f4a-79ee-4f67-902f-a9f22a70e834.PNG)
 ![alt text](https://user-images.githubusercontent.com/56637126/143788723-52a51575-b298-4348-be8b-f6eb14e6a82b.PNG)
 
