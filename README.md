@@ -17,6 +17,11 @@ Oyunumuzda W, A, S, D tuşları ile hareket edebilir, space tuşunu kullanarak d
 
 Oyunumuzu [buradan](https://simmer.io/@connetables/ultimatenechmi) oynayabilirsiniz.
 
-Oyunun Yapımcıları
-- [Bayram Atakan Koşdurma](https://github.com/bayramatakankosdurma)
-- [Doğukan Yıldız](https://github.com/dogukanyildiz99)
+Oyun Görselleri
+![alt text](https://user-images.githubusercontent.com/56637126/143788712-d5c79f4a-79ee-4f67-902f-a9f22a70e834.PNG)
+![alt text](https://user-images.githubusercontent.com/56637126/143788723-52a51575-b298-4348-be8b-f6eb14e6a82b.PNG)
+
+
+## Bursa Teknik Üniversitesi - Oyun Programlama Dersi Projesi
+- [Bayram Atakan Koşdurma](https://github.com/bayramatakankosdurma) - 18360859044
+- [Doğukan Yıldız](https://github.com/dogukanyildiz99) - 20360859095
