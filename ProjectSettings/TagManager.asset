@@ -7,6 +7,7 @@ TagManager:
   - EnemyBody
   - Head
   - Coin
+  - GameMusic
   layers:
   - Default
   - TransparentFX

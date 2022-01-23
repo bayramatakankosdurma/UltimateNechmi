@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerMovement : MonoBehaviour
 {
+    //public int level = SceneManager.GetActiveScene().buildIndex;
+    public int level = 0;
     public float speed = 6.0f;
 
     public float rotationSpeed = 1.0f;
@@ -67,4 +71,24 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    public void SavePlayer()
+    {
+        //verileri kaydeder.
+        SaveGame.SavePlayer(this);
+    }
+
+    public void LoadPlayer()
+    {
+        //oyuncu verilerini save'den çeker.
+        OyuncuInfo info = SaveGame.LoadPlayer();
+
+        level = info.level;
+
+        Vector3 position;
+        position.x = info.position[0];
+        position.y = info.position[1];
+        position.z = info.position[2];
+        transform.position = position;
+
+    }
 }

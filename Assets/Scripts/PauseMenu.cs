@@ -30,7 +30,10 @@ public class PauseMenu : MonoBehaviour
     //Ana menüye dönüşü sağlar
     public void MainMenu()
     {
+
         SceneManager.LoadScene("Start Screen");
+        PlayerMovement info = new PlayerMovement();
+        info.SavePlayer();
     }
 
     // Update is called once per frame

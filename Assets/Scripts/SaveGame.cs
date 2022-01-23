@@ -1,25 +1,44 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.IO;
 using UnityEngine;
+using System.Runtime.Serialization.Formatters.Binary;
 
-public class LoadGame : MonoBehaviour
+public static class SaveGame
 {
     //Kayıtlı oyuna devam etmemizi sağlar
-    public void Continue()
+    public static void SavePlayer(PlayerMovement oyuncu)
     {
+        //save dosyalarını daha güvenli yapmak için binary halinde saklayacağız.
+        BinaryFormatter formatter = new BinaryFormatter();
+        //veri yolları mac, windows, linux için farklı olduğu için değişmeyecek bir path oluşturulur.
+        string dizin = Application.persistentDataPath+ "/oyuncu.zort";
 
+        FileStream stream = new FileStream(dizin, FileMode.Create);
+
+        //constructor ile oyuncunun verileri çekilir.
+        OyuncuInfo info = new OyuncuInfo(oyuncu);
+
+        formatter.Serialize(stream, info);
+        stream.Close();
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public static OyuncuInfo LoadPlayer ()
     {
-        
-    }
+        string dizin = Application.persistentDataPath+ "/oyuncu.zort";
+        if(File.Exists(dizin))
+        {
+            BinaryFormatter formatter = new BinaryFormatter();
+            FileStream stream = new FileStream(dizin, FileMode.Open);
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+            OyuncuInfo info = formatter.Deserialize(stream) as OyuncuInfo;
+            stream.Close();
+
+            return info;
+        } else
+        {
+            //save dosyası yoksa hata vermesini sağlar ve null döndürür
+            Debug.LogError("Şu dizinde kayıt dosyası bulunamadı"+ dizin);
+            return null;
+        }
     }
 
 }
