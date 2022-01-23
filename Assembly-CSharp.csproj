@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{9D401717-EF8C-2300-A144-23B85F8F48F1}</ProjectGuid>
+    <ProjectGuid>{DE34F76F-CE6E-E757-4BF9-DCC729D55AB2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -55,16 +55,17 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\ItemCollector.cs" />
     <Compile Include="Assets\Scripts\Rotate.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\OyuncuInfo.cs" />
     <Compile Include="Assets\Scripts\EndMenu.cs" />
+    <Compile Include="Assets\Scripts\DontDestroy.cs" />
+    <Compile Include="Assets\Scripts\SaveGame.cs" />
     <Compile Include="Assets\Scripts\Finish.cs" />
     <Compile Include="Assets\Scripts\PlayerDeath.cs" />
     <Compile Include="Assets\Scripts\MovementOfOtherObjects.cs" />
     <Compile Include="Assets\Scripts\StartMenu.cs" />
     <Compile Include="Assets\Scripts\StandOnPlatform.cs" />
-    <Compile Include="Assets\Scripts\SaveGame.cs" />
-    <Compile Include="Assets\Scripts\PauseMenu.cs" />
-    <Compile Include="Assets\Scripts\OyuncuInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\8Bit Music Album - 051321\Notes.txt" />

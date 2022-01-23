@@ -14,7 +14,7 @@ bir savaşma kabiliyeti yoktur o yüzden düşmanlarla tek mücadele şansınız
 
 
 - Oyunumuzda W, A, S, D tuşları ile hareket edebilir, space tuşunu kullanarak da zıplayabilirsiniz. 
-
+- Oyun esnasında ESC tuşu ile ara menüye girebilir sıcak bir çay alıp eğlenceye devam edebilirsiniz veya çok sıkıldıysanız ana menüye dönebilir ya da oyundan direkt çıkabilirsiniz.
 - Oyunumuzu [buradan](https://simmer.io/@connetables/ultimatenechmi) oynayabilirsiniz.
 
 ### Oyun Görselleri
